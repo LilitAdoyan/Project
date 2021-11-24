@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Select element by class name</title>
+    <script>
+        document.write("From HEAD: " + document.body);
+    </script>
+</head>
+<body>
+   <p>This is a paragraph of text</p>
+    <div class="test">This is one more paragraph of teet</div>
+    <p>This is another paragraph</p>
+    <hr/>
+    <script>
+        var matches = document.getElemetsByTagName("p");
+        document.write("Number of selected elements: " + matches.length +"<br>");
+        matches[0].style.fontWeight = "bold";
+        matches[matches.length - 1].style.fontStyle = "italic";
+        for (var elem in matches) {
+            matches[elem].style.background = "yellow";
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Select element by ID attribute</title>
+    <script>
+        document.write("From HEAD: " + document.body);
+    </script>
+</head>
+<body>
+   <p id="mark">This is a paragraph of text</p>
+    <p>This is another paragraph</p>
+    <script>
+        var match = document.getElemetById("mark");
+        match.style.background = "yellow";
+    </script>
+</body>
+</html>
